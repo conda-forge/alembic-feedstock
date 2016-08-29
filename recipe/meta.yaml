@@ -16,7 +16,7 @@ build:
   entry_points:
     - alembic = alembic.config:main
 
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -47,7 +47,11 @@ test:
 about:
   home: http://bitbucket.org/zzzeek/alembic
   license: MIT
+  license_file: LICENSE
+  license_family: MIT
   summary: 'A database migration tool for SQLAlchemy.'
+  dev_url: http://bitbucket.org/zzzeek/alembic
+  doc_url: http://alembic.zzzcomputing.com/en/latest/
 
 extra:
   recipe-maintainers:
