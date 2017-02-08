@@ -1,7 +1,7 @@
 {%set name = "alembic" %}
-{%set version = "0.8.7" %}
+{%set version = "0.8.10" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "7fb8a456d6c47fe24b87e02acb405b2094545f9b574beb80105a64fe9b335a45" %}
+{%set hash_val = "0e3b50e96218283ec7443fb661199f5a81f5879f766967a8a2d25e8f9d4e7919" %}
 
 package:
   name: {{ name }}
@@ -23,7 +23,6 @@ requirements:
   build:
     - python
     - setuptools
-    - python-editor >=0.3
 
   run:
     - python
