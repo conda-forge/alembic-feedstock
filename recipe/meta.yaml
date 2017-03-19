@@ -1,7 +1,7 @@
 {%set name = "alembic" %}
-{%set version = "0.8.10" %}
+{%set version = "0.9.1" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "0e3b50e96218283ec7443fb661199f5a81f5879f766967a8a2d25e8f9d4e7919" %}
+{%set hash_val = "767cf6c8c4578f1f625f17bfbc8716a7d4f80a0c1efc7a9b72af30ad68954962" %}
 
 package:
   name: {{ name }}
