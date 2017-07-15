@@ -1,7 +1,7 @@
 About alembic
 =============
 
-Home: http://bitbucket.org/zzzeek/alembic
+Home: https://bitbucket.org/zzzeek/alembic
 
 Package license: MIT
 
