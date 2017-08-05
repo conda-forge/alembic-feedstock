@@ -1,7 +1,7 @@
 {% set name = "alembic" %}
-{% set version = "0.9.3" %}
+{% set version = "0.9.4" %}
 {% set hash_type = "sha256" %}
-{% set hash = "57f2ede554c0b18f1cf811cfbb3b02c586a5422df94922e3821883ba0b8c616c" %}
+{% set hash = "aa07406e74b18583c92c909b319bd79b89f281c2161615b0a11e2001df45a8d1" %}
 {% set bundle = "tar.gz" %}
 {% set build = 0 %}
 
