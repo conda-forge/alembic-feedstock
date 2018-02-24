@@ -1,5 +1,5 @@
 {% set name = "alembic" %}
-{% set version = "0.9.7" %}
+{% set version = "0.9.8" %}
 {% set hash_type = "sha256" %}
 {% set hash = "46f4849c6dce69f54dd5001b3215b6a983dee6b17512efee10e237fa11f20cfa" %}
 {% set bundle = "tar.gz" %}
@@ -18,7 +18,7 @@ build:
   noarch: python
   entry_points:
     - alembic = alembic.config:main
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
