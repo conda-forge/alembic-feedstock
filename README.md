@@ -14,12 +14,15 @@ Summary: A database migration tool for SQLAlchemy.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/alembic-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/alembic-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/alembic-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/alembic-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/alembic/badges/version.svg)](https://anaconda.org/conda-forge/alembic)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/alembic/badges/downloads.svg)](https://anaconda.org/conda-forge/alembic)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-alembic-green.svg)](https://anaconda.org/conda-forge/alembic) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/alembic.svg)](https://anaconda.org/conda-forge/alembic) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/alembic.svg)](https://anaconda.org/conda-forge/alembic) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/alembic.svg)](https://anaconda.org/conda-forge/alembic) |
 
 Installing alembic
 ==================
