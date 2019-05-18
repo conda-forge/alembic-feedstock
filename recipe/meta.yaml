@@ -1,9 +1,8 @@
 {% set name = "alembic" %}
-{% set version = "0.8.10" %}
+{% set version = "1.0.10" %}
 {% set hash_type = "sha256" %}
-{% set hash = "0e3b50e96218283ec7443fb661199f5a81f5879f766967a8a2d25e8f9d4e7919" %}
+{% set hash = "828dcaa922155a2b7166c4f36ec45268944e4055c86499bd14319b4c8c0094b7" %}
 {% set bundle = "tar.gz" %}
-{% set build = 0 %}
 
 package:
   name: {{ name }}
@@ -18,19 +17,19 @@ build:
   noarch: python
   entry_points:
     - alembic = alembic.config:main
-  number: 2
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
     - python
     - pip
-
   run:
     - python
-    - sqlalchemy >=0.7.6
+    - sqlalchemy >=0.9.9
     - mako
     - python-editor >=0.3
+    - python-dateutil
 
 test:
   imports:
