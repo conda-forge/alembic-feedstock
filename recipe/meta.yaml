@@ -3,7 +3,6 @@
 {% set hash_type = "sha256" %}
 {% set hash = "828dcaa922155a2b7166c4f36ec45268944e4055c86499bd14319b4c8c0094b7" %}
 {% set bundle = "tar.gz" %}
-{% set build = 0 %}
 
 package:
   name: {{ name }}
@@ -19,19 +18,18 @@ build:
   entry_points:
     - alembic = alembic.config:main
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
     - sqlalchemy >=0.7.6
     - mako
     - python-editor >=0.3
-    - python-dateutil
 
 test:
   imports:
@@ -59,3 +57,4 @@ extra:
   recipe-maintainers:
     - anguslees
     - pmlandwehr
+    - xylar
