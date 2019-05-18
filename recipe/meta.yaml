@@ -1,7 +1,7 @@
 {% set name = "alembic" %}
-{% set version = "1.0.8" %}
+{% set version = "0.8.10" %}
 {% set hash_type = "sha256" %}
-{% set hash = "505d41e01dc0c9e6d85c116d0d35dbb0a833dcb490bf483b75abeb06648864e8" %}
+{% set hash = "0e3b50e96218283ec7443fb661199f5a81f5879f766967a8a2d25e8f9d4e7919" %}
 {% set bundle = "tar.gz" %}
 {% set build = 0 %}
 
@@ -18,20 +18,19 @@ build:
   noarch: python
   entry_points:
     - alembic = alembic.config:main
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 2
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
     - sqlalchemy >=0.7.6
     - mako
     - python-editor >=0.3
-    - python-dateutil
 
 test:
   imports:
@@ -59,3 +58,4 @@ extra:
   recipe-maintainers:
     - anguslees
     - pmlandwehr
+    - xylar
