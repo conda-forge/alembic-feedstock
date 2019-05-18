@@ -24,12 +24,12 @@ requirements:
   host:
     - python
     - pip
-
   run:
     - python
-    - sqlalchemy >=0.7.6
+    - sqlalchemy >=0.9.9
     - mako
     - python-editor >=0.3
+    - python-dateutil
 
 test:
   imports:
