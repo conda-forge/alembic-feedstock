@@ -1,7 +1,6 @@
 {% set name = "alembic" %}
-{% set version = "1.4.0" %}
-{% set hash_type = "sha256" %}
-{% set hash = "2df2519a5b002f881517693b95626905a39c5faf4b5a1f94de4f1441095d1d26" %}
+{% set version = "1.4.1" %}
+{% set hash = "791a5686953c4b366d3228c5377196db2f534475bb38d26f70eb69668efd9028" %}
 {% set bundle = "tar.gz" %}
 
 package:
@@ -11,14 +10,14 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
   entry_points:
     - alembic = alembic.config:main
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -49,7 +48,7 @@ about:
   license_file: LICENSE
   license: MIT
   license_family: MIT
-  summary: 'A database migration tool for SQLAlchemy.'
+  summary: A database migration tool for SQLAlchemy.
   dev_url: https://bitbucket.org/zzzeek/alembic
   doc_url: http://alembic.zzzcomputing.com/en/latest/
 
