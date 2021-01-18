@@ -5,11 +5,13 @@ Home: https://bitbucket.org/zzzeek/alembic
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/alembic-feedstock/blob/master/LICENSE.txt)
 
 Summary: A database migration tool for SQLAlchemy.
 
+Development: https://bitbucket.org/zzzeek/alembic
 
+Documentation: http://alembic.zzzcomputing.com/en/latest/
 
 Current build status
 ====================
