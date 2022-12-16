@@ -1,16 +1,13 @@
 {% set name = "alembic" %}
 {% set version = "1.9.0" %}
-{% set hash = "6af6792fe699730b27480382701b16028ebbaac6bc5cd4f06daf5fa3e4690364" %}
-{% set bundle = "tar.gz" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  sha256: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/alembic-{{ version }}.tar.gz
+  sha256: 6af6792fe699730b27480382701b16028ebbaac6bc5cd4f06daf5fa3e4690364
 
 build:
   noarch: python
