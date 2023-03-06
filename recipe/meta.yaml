@@ -27,6 +27,7 @@ requirements:
     # Keeping noarch: python for now but may need to constrain these 2 as upstream
     - importlib-metadata
     - importlib_resources
+    - typing-extensions >=4
 
 test:
   requires:
