@@ -150,6 +150,3 @@ Feedstock Maintainers
 * [@anguslees](https://github.com/anguslees/)
 * [@xylar](https://github.com/xylar/)
 
-
-<!-- dummy commit to enable rerendering -->
-
