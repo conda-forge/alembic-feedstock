@@ -3,13 +3,13 @@ About alembic-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/alembic-feedstock/blob/main/LICENSE.txt)
 
-Home: https://bitbucket.org/zzzeek/alembic
+Home: https://alembic.sqlalchemy.org/
 
 Package license: MIT
 
 Summary: A database migration tool for SQLAlchemy.
 
-Development: https://bitbucket.org/zzzeek/alembic
+Development: https://github.com/sqlalchemy/alembic
 
 Documentation: http://alembic.zzzcomputing.com/en/latest/
 
