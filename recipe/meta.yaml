@@ -1,5 +1,5 @@
 {% set name = "alembic" %}
-{% set version = "1.14.0" %}
+{% set version = "1.14.1" %}
 
 package:
   name: {{ name }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/alembic-{{ version }}.tar.gz
-  sha256: b00892b53b3642d0b8dbedba234dbf1924b69be83a9a769d5a624b01094e304b
+  sha256: 496e888245a53adf1498fcab31713a469c65836f8de76e01399aa1c3e90dd213
 
 build:
   noarch: python
   entry_points:
     - alembic = alembic.config:main
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
