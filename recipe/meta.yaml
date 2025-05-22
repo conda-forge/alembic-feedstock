@@ -26,6 +26,8 @@ requirements:
     - sqlalchemy >=1.4.0
     - mako
     - typing_extensions >=4.12
+    # for python <3.11 but adding it for all since we're noarch: python
+    - tomli
 
 test:
   requires:
