@@ -1,5 +1,5 @@
 {% set name = "alembic" %}
-{% set version = "1.16.3" %}
+{% set version = "1.16.4" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/alembic-{{ version }}.tar.gz
-  sha256: 18ad13c1f40a5796deee4b2346d1a9c382f44b8af98053897484fa6cf88025e4
+  sha256: efab6ada0dd0fae2c92060800e0bf5c1dc26af15a10e02fb4babff164b4725e2
 
 build:
   noarch: python
