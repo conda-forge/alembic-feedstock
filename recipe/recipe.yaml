@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: alembic
-  version: 1.17.2
+  version: 1.18.0
 
 package:
   name: ${{ name }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/alembic-${{ version }}.tar.gz
-  sha256: bbe9751705c5e0f14877f02d46c53d10885e377e3d90eda810a016f9baa19e8e
+  sha256: 0c4c03c927dc54d4c56821bdcc988652f4f63bf7b9017fd9d78d63f09fd22b48
 
 build:
   number: 1
@@ -44,12 +44,11 @@ tests:
         - alembic.script
         - alembic.util
       python_version: ${{ python_min }}.*
+      pip_check: true
   - requirements:
       run:
-        - pip
         - python ${{ python_min }}.*
     script:
-      - pip check
       - alembic --help
 
 about:
