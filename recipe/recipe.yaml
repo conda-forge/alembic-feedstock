@@ -27,7 +27,7 @@ requirements:
     - setuptools >=77.0.3
   run:
     - python >=${{ python_min }}
-    - sqlalchemy >=1.4.0
+    - sqlalchemy >=1.4.23
     - mako
     - typing_extensions >=4.12
     # for python <3.11 but adding it for all since we're noarch: python
