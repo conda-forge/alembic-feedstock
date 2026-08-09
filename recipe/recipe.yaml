@@ -43,7 +43,9 @@ tests:
         - alembic.runtime
         - alembic.script
         - alembic.util
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       pip_check: true
   - requirements:
       run:
