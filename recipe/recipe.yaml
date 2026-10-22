@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: alembic
-  version: 1.20.0
+  version: "1.20.1"
 
 package:
   name: ${{ name }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/alembic-${{ version }}.tar.gz
-  sha256: db505480647bc60386c5369402f4a57a506b7539c9e9ef5e270d45cbbe4939bf
+  sha256: 83490def1f723413db5096591f7609ac52544805be93849170088ed04f5a2e0b
 
 build:
   number: 0
